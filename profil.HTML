@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Page de profil utilisateur — Hiba, étudiante en génie biologique" />
+  <title>Profil Utilisateur — Hiba</title>
+</head>
+
+<body>
+
+  <header role="banner">
+
+    <figure>
+      <img
+        src="https://ui-avatars.com/api/?name=Hiba&background=1e2d5a&color=fff&size=110"
+        alt="Photo de profil de Hiba"
+        width="110"
+        height="110"
+      />
+      <figcaption>Photo de profil — Hiba</figcaption>
+    </figure>
+
+    <h1>Hiba</h1>
+    <p><strong>Étudiante en Génie Biologique · Consultante IT à IRIS Junior Création</strong></p>
+
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <hr />
+  </header>
+
+  <main id="contenu-principal">
+
+    <!-- Section À propos -->
+    <section id="a-propos" aria-labelledby="titre-apropos">
+      <h2 id="titre-apropos">À propos</h2>
+      <p>
+        Bonjour ! Je suis étudiante en génie biologique, passionnée par l'agroalimentaire,
+        la biotechnologie et la recherche scientifique. En parallèle de mes études,je suis consultante IT chez IRIS Junior Création, où
+        j'explore le développement web — notamment le HTML sémantique, l'accessibilité
+        et les bonnes pratiques de code propre.
+      </p>
+      <p>
+        Ce profil a été réalisé dans le cadre du workshop <strong>HTML Masterclass</strong>
+        organisé par <strong>MR Yassin MISSAOUI</strong>, en appliquant les standards W3C et les
+        recommandations ARIA pour l'accessibilité.
+      </p>
+    </section>
+
+    <hr />
+
+    <section id="competences" aria-labelledby="titre-competences">
+      <h2 id="titre-competences">Compétences</h2>
+      <ul aria-label="Liste des compétences techniques">
+        <li>HTML5 sémantique</li>
+        <li>Accessibilité (ARIA)</li>
+        <li>Git &amp; GitHub</li>
+        <li>Technique de laboratoire de base </li>
+        <li>Analyse de données</li>
+       
+      </ul>
+    </section>
+
+    <hr />
+
+    <section id="contact" aria-labelledby="titre-contact">
+      <h2 id="titre-contact">Contact</h2>
+      <p>Vous souhaitez me contacter ? Remplissez le formulaire ci-dessous.</p>
+
+      <form method="GET" action="#" aria-label="Formulaire de contact">
+
+        <fieldset>
+          <legend>Informations personnelles</legend>
+
+          <label for="prenom">Prénom :</label><br />
+          <input
+            type="text"
+            id="prenom"
+            name="prenom"
+            placeholder="Votre prénom"
+            required
+            autocomplete="given-name"
+          /><br /><br />
+
+          
+          <label for="nom">Nom :</label><br />
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            placeholder="Votre nom"
+            required
+            autocomplete="family-name"
+          /><br /><br />
+
+          <label for="email">Adresse e-mail :</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemple@domaine.com"
+            required
+            autocomplete="email"
+          /><br /><br />
+
+          <label for="telephone">Numéro de téléphone :</label><br />
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            placeholder="+216 XX XXX XXX"
+            autocomplete="tel"
+          /><br /><br />
+
+        </fieldset>
+
+        <br />
+
+        
+        <fieldset>
+          <legend>Votre message</legend>
+
+          
+          <label for="sujet">Objet de la demande :</label><br />
+          <select id="sujet" name="sujet">
+            <option value="">-- Choisir un sujet --</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="stage">Stage / Alternance</option>
+            <option value="question">Question technique</option>
+            <option value="autre">Autre</option>
+          </select><br /><br />
+
+         
+          <label for="date-contact">Date souhaitée de contact :</label><br />
+          <input
+            type="date"
+            id="date-contact"
+            name="date-contact"
+          /><br /><br />
+
+          
+          <label for="message">Message :</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="Écrivez votre message ici…"
+            required
+          ></textarea><br /><br />
+
+          
+          <input
+            type="checkbox"
+            id="consentement"
+            name="consentement"
+            required
+          />
+          <label for="consentement">
+            J'accepte que mes données soient utilisées pour me recontacter.
+          </label><br /><br />
+
+        </fieldset>
+
+        <br />
+
+        
+        <button type="submit">Envoyer le message</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <hr />
+
+  
+  <footer role="contentinfo">
+
+    <nav aria-label="Liens réseaux sociaux">
+      <ul>
+        <li>
+          <a href="https://github.com/hibat-allahmkachar-dev" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub (nouvel onglet)">
+            GitHub
+          </a>
+        </li>
+       
+        <li>
+          <a href="hibat-allah.mkachar@enis.tn" aria-label="Envoyer un e-mail à Hiba">
+            Email
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <p><small>&copy; 2026 Hiba — Tous droits réservés</small></p>
+
+  </footer>
+
+</body>
+</html>
